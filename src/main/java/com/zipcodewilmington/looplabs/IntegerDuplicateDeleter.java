@@ -16,7 +16,6 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
     public Integer[] removeDuplicates(int maxNumberOfDuplications) {
         int count = 0;
         String nonDup = "";
-        int i = 0;
         Integer[] result;
 
 
@@ -38,7 +37,6 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         for ( int h=0; h<nonDup.toCharArray().length;h++){
             Integer chars = Integer.parseInt(String.valueOf(nonDup.charAt(h)));
             result[h] = chars;
-            i++;
 
         }
         return result;
